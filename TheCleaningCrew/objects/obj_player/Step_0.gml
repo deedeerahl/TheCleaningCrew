@@ -8,6 +8,9 @@ input_up	= keyboard_check(vk_up);
 input_down	= keyboard_check(vk_down);
 input_walk	= keyboard_check(vk_control);
 input_run	= keyboard_check(vk_shift);
+interact_key = keyboard_check(vk_return);
+interacting = false;
+
 
 //------------ALTER SPEED
 if(input_walk or input_run){
@@ -82,3 +85,15 @@ if (moveX == 0) and(moveY == 0){
 //------------APPLY MOVEMENT
 x += moveX;
 y += moveY;
+
+//-----------interaction code
+if (interact_key)
+{
+	if(place_meeting(x,y,obj_lever) || place_meeting(x-1,y,obj_lever) || place_meeting(x,y-1,obj_lever) ||place_meeting(x+1,y,obj_lever) || place_meeting(x,y+1,obj_lever) )
+	{
+		target = instance_nearest(x,y,obj_lever);
+		if(target!=noone){
+			target.active = !target.active;
+			}
+	}
+}
