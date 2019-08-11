@@ -13,3 +13,5 @@ y_offset = sprite_get_yoffset(mask_index);
 
 spr_character = spr_base_Deedee;
 spr_accessory = spr_accessory_Deedee_bracer;
+
+interacting = false;
