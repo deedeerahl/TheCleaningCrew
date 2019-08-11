@@ -8,7 +8,7 @@ input_up	= keyboard_check(vk_up);
 input_down	= keyboard_check(vk_down);
 input_walk	= keyboard_check(vk_control);
 input_run	= keyboard_check(vk_shift);
-interact_key = keyboard_check(vk_return);
+
 
 
 //------------ALTER SPEED
@@ -64,22 +64,3 @@ if (moveY != 0){
 x += moveX;
 y += moveY;
 
-//-----------interaction code
-if (interact_key)
-{
-	if(!interacting)     //check we aren't already interacting
-	{
-		interacting = true;  //set that we are now interacting to work as a debounce
-		target = instance_nearest(x,y,obj_lever);  //find the nearest object...only looking for levers now.. 
-		if(distance_to_object(target)<2) //check we're close to our object.
-		{
-			if(target!=noone){  //check the target isn't null.
-				if(target.type == "interact")  //get the type, this will tell us how to interact
-				{
-					target.active = !target.active;	 //set the target to active to flip its state. 	
-				}
-			}
-		}
-		interacting = false;  //set interacting back to false, we're done now. 
-	}
-}
