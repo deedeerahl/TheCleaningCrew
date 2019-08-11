@@ -60,27 +60,6 @@ if (moveY != 0){
 		}
 	}
 
-//------------UPDATE SPRITE ||I KNOW IT's UGLY, I'M FIGURING OUT HOW TO OPTIMIZE THIS
-if (moveX < 0){
-	image_speed = spd/3;
-	sprite_index = spr_Deedee_Left;
-}
-if (moveX > 0){
-	image_speed = spd/3;
-	sprite_index = spr_Deedee_Right;
-}
-if (moveY > 0){
-	image_speed = spd/3;
-	sprite_index = spr_Deedee_Down;
-}
-if (moveY < 0){
-	image_speed = spd/3;
-	sprite_index = spr_Deedee_Up;
-}
-if (moveX == 0) and(moveY == 0){
-	image_speed = 0;
-	image_index = 0;
-}
 
 //------------APPLY MOVEMENT
 x += moveX;

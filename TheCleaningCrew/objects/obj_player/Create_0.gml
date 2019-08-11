@@ -5,4 +5,11 @@ n_spd = 2;
 r_spd = 3;
 spd = 0;
 
-img_spd = 0;
+x_frame = 0;
+y_frame = 0;
+
+x_offset = sprite_get_xoffset(mask_index);
+y_offset = sprite_get_yoffset(mask_index);
+
+spr_character = spr_base_Deedee;
+spr_accessory = spr_accessory_Deedee_bracer;
