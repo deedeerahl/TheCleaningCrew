@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "2b56d06f-e0d1-4c66-b00c-722a489a26cd",
+            "Value": {
+                "id": "9a27eb33-13c1-4160-8f47-ac746baa2cc4",
+                "resourcePath": "objects\\obj_NPC_Viper\\obj_NPC_Viper.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "307e9e6f-35d5-44ec-9675-c5dfd595f54a",
             "Value": {
                 "id": "c74d5976-c5b2-44ee-b4f1-abf629d905cc",
@@ -287,14 +295,6 @@
             }
         },
         {
-            "Key": "e4172c2f-a5c6-4d0c-8281-1dc41c59bdb2",
-            "Value": {
-                "id": "92d833fe-e5ab-428e-b093-897a7ef3715a",
-                "resourcePath": "scripts\\scr_test\\scr_test.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e4ec74e4-17bc-42af-92a6-2a77ed3c7734",
             "Value": {
                 "id": "59db44f3-e83b-4f99-94d1-51bd55d4a9bf",
@@ -307,6 +307,14 @@
             "Value": {
                 "id": "5ab54557-89d0-41d9-b3aa-6d0f85c7284e",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ecd980ea-a06d-4b48-ae32-b0c80c0fc57a",
+            "Value": {
+                "id": "f7705007-a031-40c6-bd7c-9fb80e5b3377",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -328,7 +336,7 @@
         }
     ],
     "script_order": [
-        "e4172c2f-a5c6-4d0c-8281-1dc41c59bdb2"
+        
     ],
     "tutorial": ""
 }

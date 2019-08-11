@@ -28,7 +28,3 @@ if (x_frame + (anim_speed/60) < anim_lenght) {
 
 //DRAW CHARACTER BASE
 draw_sprite_part(spr_character, 0, floor(x_frame)*frame_width, y_frame*frame_height, frame_width, frame_height, xx, yy);
-
-//DRAW CHARACTER ACCESSORY 
-draw_sprite_part(spr_accessory, 0, floor(x_frame)*frame_width, y_frame*frame_height, frame_width, frame_height, xx, yy);
-	
